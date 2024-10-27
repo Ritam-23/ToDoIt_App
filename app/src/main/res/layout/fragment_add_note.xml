@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="825dp"
+        tools:context=".HomeFragment"
+        android:background="@drawable/pic">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            tools:context=".NewNoteFragment">
+
+            <TextView
+                android:id="@+id/addNoteHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/playwritegbs_variablefont_wght"
+                android:text="Add Task."
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/addNoteHeading"
+                android:layout_marginTop="16dp"
+
+                android:fontFamily="@font/playwritegbs_variablefont_wght"
+                android:hint="Enter the task"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:background="@drawable/border"
+                android:shadowColor = "#000"
+                android:shadowDx = "-2"
+                android:shadowDy = "-2"
+                android:shadowRadius = "1"
+                android:borderRadius="2"/>
+
+            <EditText
+                android:id="@+id/addNoteDesc"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@id/addNoteTitle"
+                android:layout_marginTop="12dp"
+
+                android:fontFamily="@font/playwritegbs_variablefont_wght"
+                android:textStyle="bold"
+                android:gravity="top"
+                android:hint="Enter the description"
+                android:padding="12dp"
+                android:textSize="25sp"
+                android:background="@drawable/border"
+                android:shadowColor = "#000"
+                android:shadowDx = "-2"
+                android:shadowDy = "-2"
+                android:shadowRadius = "1"
+                android:backgroundTint="@color/cardview_light_background"/>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addNoteFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:backgroundTint="@color/burntsienna"
+                android:tintMode="@color/white"
+                android:src="@drawable/baseline_file_download_done_24"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="addFab" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
